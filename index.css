@@ -1,0 +1,33 @@
+body{
+	margin:0px;
+}
+.resume{
+	background-color: #f1f1f1;
+	margin:auto;
+	width:80%;
+
+}
+.card{
+	background-color:white;
+	padding:2px 3px;
+	width:80%;
+	margin:auto;
+
+}
+.card .card_head h1{
+	font-size: 20px;
+    font-family: Arial;
+    padding: 7px 3px;
+    color: #536668;
+    font-weight:bold; 
+    border-bottom: 2px solid rgba(158,223,245,0.7);
+}
+.card_details{
+	background-color: white;
+	font-family: Arial;
+	font-weight: lighter;
+	font-size: 15px;
+}
+.card_details img{
+	border-radius: 
+}
