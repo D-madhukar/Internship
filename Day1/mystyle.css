@@ -2,7 +2,7 @@ body{
 	margin:0px;
 	font-family: Arial;
 }
-p{
+p{	
 	font-family: Arial;
 	font-size: 16px;
 }
@@ -101,7 +101,7 @@ ol li{
 .card .card-project{
 	background-color: #f4f4f4;
 	box-shadow: 4px 4px 3px rgba(180, 195, 200,0.6);
-	height:250px;
+	min-height:250px;
 	margin-right: 50px;
 	border: 1px solid rgba(102, 89, 47,0.4);
 }
@@ -109,12 +109,19 @@ ol li{
 	color:white;
 	/*background-color:#1495C5;*/
 }
+table{
+	width:100%;
+}
 
 ul{
 	list-style: none;
 }
 td{
 	width:50%;
+	white-space: nowrap;
 	border-bottom: 1px solid rgba(89, 110, 117,0.3);
 
+}
+.line{
+	  border-bottom: 1px solid rgba(101, 142, 142,0.5);
 }
