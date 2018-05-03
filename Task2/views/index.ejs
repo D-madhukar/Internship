@@ -1,0 +1,40 @@
+<html>
+    <head>
+        </head>
+        <body> 
+            <form action="../process" method="post">
+            <label for="name">Name:</label>
+			<input type="text" name="name" id="name"   pattern="[a-zA-Z0-9]+"><br><br>
+			<label for="itemname">Item Name:</label>
+				<input type="text" name="itemname" id="itemname" required  pattern="[a-zA-Z0-9]+"><br><br>
+			<label for="price">price:</label>
+				<input type="number" name="price" id="price"  pattern="[0-9]+"><br><br>
+			<label for="quantity">quantity:</label>
+				<input type="number" name="quantity" id="quantity" required  pattern="[0-9]+"><br><br>
+			<input type="submit" name="submit" value="submit">
+            </form>
+            <table width="80%" cellspacing="0" border="1">
+                <tr>
+                    <th>name</th>
+                    <th>itemname</th>
+                    <th>price</th>
+                    <th>quantity</th>  
+                </tr>
+           <%
+                for(i=0;i<result.length;i++){
+            %>
+            <tr>
+            <td><%=  result[i].name%></td>
+            <td><%=  result[i].itemname%></td>
+            <td><%=  result[i].price%></td>
+            <td><%=  result[i].quantity%></td>
+            </tr>
+            <%        
+                }
+           %>
+            
+        </table>
+            
+       
+    </body>
+</html>
